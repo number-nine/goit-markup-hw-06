@@ -108,7 +108,7 @@ body {
     border-radius: 4px;
     border: 1px solid transparent;
 
-    
+
 
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -735,9 +735,13 @@ body {
     display: block;
 }
 
-.subscribe-input {
+.subscribe-field {
     width: 264px;
     height: 40px;
+    margin-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
 
     background-color: transparent;
 
@@ -745,11 +749,75 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 
+    color: var(--light);
+
+    /* font-size: 20px; */
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+
 }
 
 .footer-subscribe .button {
+   min-width: 165px;
     padding-top: 8px;
     padding-bottom: 8px;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.subscibe-form {
+    display: flex;
+
+    align-items: center;
+}
+
+.subscribe-input {
+    position: relative;
+    /* outline: 1px solid orange; */
+}
+
+.subscribe-label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+
+}
+
+.subscribe-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+
+    fill: currentColor;
+}
+
+.subscibe-form .button.primary {
+    display: flex;
+}
+
+.subscribe-input:focus-within .subscribe-label,
+.subscribe-field:not(:placeholder-shown) + .subscribe-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* Modal window */
@@ -774,7 +842,6 @@ body {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-    /* visibility: hidden; */
 
 }
 

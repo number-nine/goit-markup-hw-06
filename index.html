@@ -535,11 +535,18 @@
         <!-- Subscribe block-->
         <div class="footer-subscribe">
           <b class="subscribe-title">Subscribe</b>
-          <label class="subscribe-label">
-            <input type="text" class="subscribe-input"/>
-            E-mail
+          <form action="" class="subscibe-form" name="subscribe-form">
+          <label class="subscribe-input">
+            <input class="subscribe-field" name="subscribe-field" type="text" placeholder=" "/>
+            <span class="subscribe-label">E-mail</span>
           </label>
-          <button type="button" class="button primary">Subscribe</button>
+          <button class="button primary" name="subscribe-submit" type="submit">
+            Subscribe
+            <svg class="subscribe-icon">
+              <use href="images/icons.svg#plane"></use>
+            </svg>
+          </button>
+        </form>
         </div>
       </div>
     </footer>
