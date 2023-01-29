@@ -536,17 +536,27 @@
         <div class="footer-subscribe">
           <b class="subscribe-title">Subscribe</b>
           <form action="" class="subscibe-form" name="subscribe-form">
-          <label class="subscribe-input">
-            <input class="subscribe-field" name="subscribe-field" type="email" placeholder=" " autocomplete="off"/>
-            <span class="subscribe-label">E-mail</span>
-          </label>
-          <button class="button primary" name="subscribe-submit" type="submit">
-            Subscribe
-            <svg class="subscribe-icon">
-              <use href="images/icons.svg#plane"></use>
-            </svg>
-          </button>
-        </form>
+            <label class="subscribe-input">
+              <input
+                class="subscribe-field"
+                name="subscribe-field"
+                type="email"
+                placeholder=" "
+                autocomplete="off"
+              />
+              <span class="subscribe-label">E-mail</span>
+            </label>
+            <button
+              class="button primary"
+              name="subscribe-submit"
+              type="submit"
+            >
+              Subscribe
+              <svg class="subscribe-icon">
+                <use href="images/icons.svg#plane"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -557,12 +567,100 @@
           type="button"
           aria-label="close modal"
           class="modal-close"
-          data-modal-close
-        >
+          data-modal-close>
           <svg class="close-icon">
             <use href="images/icons.svg#close-modal"></use>
           </svg>
         </button>
+        <b class="contact-title"
+          >Leave your contacts and we will call you back</b>
+        <form action="" class="contact-form" name="contact-form">
+          <ul class="list form-list">
+            <li class="form-item">
+              <label class="field">
+                <input
+                  class="name-field"
+                  name="name-field"
+                  type="text"
+                  placeholder=" "
+                  autocomplete="off"
+                />
+                <span class="label">Name</span>
+                <svg class="contact-icon">
+                  <use href="images/icons.svg#person-cont"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="form-item">
+              <label class="field">
+                <input
+                  class="phone-field"
+                  name="phone-field"
+                  type="tel"
+                  placeholder=" "
+                  autocomplete="off"
+                />
+                <span class="label">Phone</span>
+                <svg class="contact-icon">
+                  <use href="images/icons.svg#phone-cont"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="form-item">
+              <label class="field">
+                <input
+                  class="email-field"
+                  name="email-field"
+                  type="email"
+                  placeholder=" "
+                  autocomplete="off"
+                />
+                <span class="label">Email</span>
+                <svg class="contact-icon">
+                  <use href="images/icons.svg#email-cont"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="form-item">
+              <label class="area">
+                <textarea
+                  class="comment-field"
+                  name="comment-field"
+                  placeholder="Text input"
+                  autocomplete="off">
+                </textarea>
+                <span class="label">Comment</span>
+              </label>
+            </li>
+            <li class="form-item">
+              <label class="policy">
+                <input
+                  class="policy-field"
+                  name="policy-field"
+                  type="checkbox"
+                />
+                <span class="policy-label">
+                  <span class="policy-box"> </span>
+                  <span>
+                    I accept the terms and conditions of the
+                    <a href="" class="link-policy">Privacy Policy</a>
+                  </span>
+                </span>
+                <svg class="policy-icon">
+                  <use href="images/icons.svg#click"></use>
+                </svg>
+              </label>
+            </li>
+            <li class="form-item">
+              <button
+                class="button primary"
+                name="contact-submit"
+                type="submit">
+                Send
+              </button>
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
